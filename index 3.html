@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cybernest Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.JPG" alt="logo">
+        </div>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About Us">About Us</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <section id="Home" class="home">
+        <h2>Welcome to Cybernest Services</h2>
+        <p>Your One-Stop Shop for All Cyber Services</p>
+        <p>We offer quality and fast services to meet your digital needs.</p>
+        <p>We are the best in all cyber and IT Services.</p>
+        <button onclick="window.location.href='#Services'">Explore Our Services</button>
+    </section>
+
+    <section id="about us" class="about us">
+        <h2>About Us</h2>
+        <p>Cybernest Services is dedicated to providing a range of high-quality cyber services including binding,
+            scanning, lamination, project editing, plagiarism checker and removal, graphic design, and assignment
+            assistance. Our goal is to offer professional and efficient services that enhance your productivity,
+            creativity, and success in the digital world.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Binding</h3>
+            <p>We provide high-quality binding services for projects and books, ensuring durability and a polished,
+                professional finish.</p>
+            <button id="read-more-button" onclick="toggleServices()">Read More</button>
+
+            <!-- More services section, initially hidden -->
+            <div id="more-services" class="more-services" style="display:none;">
+                <ul>
+                    <li>Black Binding
+                        <p>We provide high-quality black binding services for projects and theses, ensuring a
+                            professional and durable finish.</p>
+                        <img src="balck.jpg" alt="Black">
+                    </li>
+                    <li>Spiral Binding
+                        <p>We provide high-quality spiral binding services for projects and theses, ensuring a secure
+                            and professional finish.</p>
+                        <img src="spiral.jpg" alt="spiral">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <h3>Project Writing</h3>
+            <p>We provide expert project writing services, delivering well-structured, research-driven, and high-quality
+                content customized to meet your specific needs.</p>
+            <button id="read-more-button" onclick="toggleServices()">Read More</button>
+
+            <!-- More services section, initially hidden -->
+            <div id="more-services" class="more-services" style="display:none;">
+                <ul>
+                    <li>Projects and Thesis Write Up
+                        <p>We specialize in writing and formatting projects, proposals, and theses, ensuring
+                            professional, high-quality documents tailored to meet client requirements.</p>
+                    </li>
+                    <li>Industrial Logbooks and Report
+                        <p>We provide professional industrial attachment logbook filling and report writing services,
+                            ensuring accurate and well-structured documentation.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <h3>Data Analysis</h3>
+            <p>We specialize in transforming raw data into actionable insights that help businesses make informed
+                decisions. Our expert team employs advanced data analysis techniques to uncover trends, patterns, and
+                valuable information that can enhance your business operations, strategies, and growth.</p>
+            <button id="read-more-button" onclick="toggleServices()">Read More</button>
+
+            <!-- More services section, initially hidden -->
+            <div id="more-services" class="more-services" style="display:none;">
+                <ul>
+                    <li>Data Cleaning & Preprocessing
+                        <p>We ensure your data is accurate, complete, and ready for analysis by removing inconsistencies
+                            and errors.</p>
+                    </li>
+                    <li>Descriptive Analytics
+                        <p>We provide comprehensive summaries of data, helping you understand past performance and
+                            identify patterns that can guide future strategies.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <h3>Graphic Design</h3>
+            <p>At Cybernest Services, we specialize in creating visually captivating and innovative designs that
+                communicate your brand's message effectively. Our team of skilled graphic designers is committed to
+                crafting designs that are not only aesthetically pleasing but also aligned with your business
+                objectives.</p>
+            <button id="read-more-button" onclick="toggleServices()">Read More</button>
+
+            <!-- More services section, initially hidden -->
+            <div id="more-services" class="more-services" style="display:none;">
+                <ul>
+                    <li>Logo and Company Profiles
+                        <p>We specialize in creating professional logos and compelling company profiles that effectively
+                            represent your business’s identity and values.</p>
+                    </li>
+                    <li>Business Cards and Cards Design
+                        <p>We specialize in designing high-quality, professional business cards and other card designs
+                            that reflect your brand’s personality and leave a lasting impact.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Online services</h3>
+                <p>At Cybernest Services, we offer a wide range of fast, secure, and affordable online services to meet
+                    your personal, academic, and business needs. Whether you need document processing, online
+                    applications, or digital marketing solutions, we’ve got you covered.</p>
+                <button id="read-more-button" onclick="toggleServices()">Read More</button>
+
+                <!-- More services section, initially hidden -->
+                <div id="more-services" class="more-services" style="display:none;">
+                    <ul>
+                        <li>Government & Business Services
+                            <p>eCitizen account registration & applications (Passports, IDs, Driving Licenses, Business
+                                Permits, etc.)
+                                KRA PIN registration & tax returns filing
+                                Business registration (BN, CR12, Company Name Search)
+                                HELB loan applications & NHIF/NSSF services</p>
+                        </li>
+                        <li>Academic & Professional Services
+                            <p>Online job applications & CV writing
+                                KUCCPS course applications & university admissions
+                                Online exams, e-learning support & research assistance
+                                Certificate verification & student portal services</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div id="Join our Community">
+            <h1>Join our Community</h1>
+            <p>Looking for a fast, reliable, and friendly place to work, game, or browse? Join us today and enjoy a top-tier digital experience! </p>
+            <button onclick="window.location.href='#Services'">Join Us </button>
+            <div class="join us image">
+                <img src="bacground 5.jpg" alt="image">
+            </div>
+            
+
+        </div>
+    </section>
+    <section>
+        <div id="contact us">
+            <h1>Contact Us</h1>
+            <p>Have questions or need support? Reach out to us!</p>
+            <p>Email: <a href="mailto:alexkamande2003@gmail.com">alexkamande2003@gmail.com</a></p>
+            <p>Contact: <a href="tel:+254746603440">+254746603440</a></p>
+
+
+        </div>
+    </section>
+    <footer>
+        <div class="Container">
+            <div class="Footer-content">
+                <h3>Contact Us</h3>
+                <p>Email:alexkamande2003@gmail.com</p>
+                <p>+254746603440</p>
+
+            </div>
+            <div class="footer-content">
+                <h3>Quick link</h3>
+                <ul class="list">
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="Services">Services</a></li>
+                    <li><a href="Contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <div>
+            <p>&copy;2024 Cybernest Services. All rights reserved</p>
+
+        </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

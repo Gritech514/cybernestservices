@@ -1,0 +1,397 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+} 
+
+/* Styling for the navigation menu */
+nav {
+    display: flex; /* Flexbox layout to align logo and menu items */
+    justify-content: space-between; /* Space between logo and menu items */
+    align-items: center; /* Vertically center content */
+    background-color: #4CAF50; /* Green background for the nav */
+    padding: 10px 20px;
+}
+
+/* Styling for the logo */
+nav .logo {
+    flex: 0 0 auto; /* Prevent logo from stretching */
+}
+
+nav .logo img {
+    width: 200px; /* Adjust logo size */
+    height: auto;
+}
+
+/* Style the unordered list (ul) */
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display list items horizontally */
+}
+
+/* Style each list item (li) */
+nav ul li {
+    margin-right: 20px; /* Space between the list items */
+}
+
+/* Style the anchor tags inside the list items */
+nav ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size */
+    padding: 10px 20px; /* Add some padding to make the links look like buttons */
+    display: inline-block; /* Make the link a block-level element */
+    border-radius: 5px; /* Rounded corners for the link */
+
+}
+
+/* Add a hover effect to the links */
+nav ul li a:hover {
+    background-color: #8B4513; /* Brown background on hover */
+}
+
+/* Add spacing after the last link */
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin on the last item */
+}
+/* Home Section Styles */
+/* Home Section Styles */
+/* General Styling for the Home Section */
+/* General reset for padding and margin */
+@keyframes backgroundSlideshow {
+    0% { background-image: url('background.jpg'); }
+    20% { background-image: url('background 1.jpg'); }
+    40% { background-image: url('background 2.jpg'); }
+    60% { background-image: url('background 3.jpg'); }
+    80% { background-image: url('tech image.jpg'); }
+    100% { background-image: url('background.jpg'); }
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    background-size: cover;
+    background-position: center;
+    animation: backgroundSlideshow 25s infinite linear;
+    transition: background-image 1s ease-in-out;
+}
+
+/* Change h2 color to yellow */
+.home h2 {
+    color: yellow;
+}
+
+/* Style the button */
+button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+.about {
+    background-color: #fff;
+    padding: 40px 15px;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        padding: 30px 10px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+}
+
+#services {
+    padding: 40px 15px;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.service-card h3 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    align-items: center;
+}
+
+button#read-more-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button#read-more-button:hover {
+    background-color: #2980b9;
+}
+
+/* More Services Section */
+.more-services {
+    margin-top: 20px;
+    display: none;
+}
+
+.more-services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.more-services li {
+    margin-bottom: 15px;
+}
+
+.more-services img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #services {
+        padding: 30px 10px;
+    }
+
+    .service-card h3 {
+        font-size: 24px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+
+    button#read-more-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Responsive Image Styles */
+@media (max-width: 480px) {
+    .more-services img {
+        width: 100%;
+        height: auto;
+    }
+}
+#Join\ our\ Community {
+    text-align: center;
+    background:#555;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1500px;
+    width: 100%;
+    
+}
+
+/* Heading Styling */
+#Join\ our\ Community h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+/* Paragraph Styling */
+#Join\ our\ Community p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Button Styling */
+#Join\ our\ Community button {
+    background-color: #ff4500;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#Join\ our\ Community button:hover {
+    background-color: #e63e00;
+}
+
+/* Ensuring the image is in its own block */
+.join.us.image {
+    margin-top: 15px;
+}
+
+/* Image Styling */
+.join.us.image img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+#contact\ us {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact\ us h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#contact\ us p {
+    margin: 10px 0;
+}
+
+#contact\ us a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact\ us a:hover {
+    text-decoration: underline;
+}
+.footer-content {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer-content h3 {
+    margin-top: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-content a {
+    display: block;
+    color: #bbb;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-content a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-content i {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: #bbb;
+    padding: 5px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
